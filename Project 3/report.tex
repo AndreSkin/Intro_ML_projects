@@ -56,7 +56,7 @@
 
 \author{Yasmin Bouhlada, Annalisa Dettori, Andrea Schinoppi}
 \title{Report third project}
-\date{$17^th$ January 2024}
+\date{January 2024}
 
 \setcounter{section}{1}
 \begin{document}
@@ -121,7 +121,7 @@ FARETABELLAAA
 
 The third data set (named \textit{real world data}) was a real data set regarding the prices of some houses. It was made of ten columns $X_1,\;.\;.\;.\;,X_{10}$ for the independent variables and one column for the dependent variable $y$. The data set had $1095$ numeric samples and it had no NaNs.
 
-The labels of the variables were: "LotArea", "TotalBsmtSF", "1stFlrSF", "2ndFlrSF", "GrLivArea", "WoodDeckSF", "OpenPorchSF", "3SsnPoarch", "ScreenPorch" and "PoolArea".
+The labels of the variables were: "\texttt{LotArea}", "\texttt{TotalBsmtSF}", "\texttt{1stFlrSF}", "\texttt{2ndFlrSF}", "\texttt{GrLivArea}", "\texttt{WoodDeckSF}", "\texttt{OpenPorchSF}", "\texttt{3SsnPoarch}", "\texttt{ScreenPorch}" and "\texttt{PoolArea}".
 
 We could resume the main information of the variables with this table:  
 
@@ -147,11 +147,15 @@ max & $215245$ & $3206$ & $3228$ & $1872$ & $4676$ & $670$ & $547$ & $407$ & $48
 
 \subsection{Methods}
 
-\subsubsection{Filter methods, wrapper methods and unbedded methods}
+\subsubsection{Filter methods, wrapper methods and embedded methods}
 
 For variables selection what we decided to do was to apply three methods: filter methods, wrapper methods and unbedded methods. 
 
-As filter method, we used the \textit{F measure}. We selected both $2$ and $6$ features:
+As filter method, we used the \textit{F measure}. SPIEGAZIONE
+
+As wrapper method we used sequential feature selection both forward and backward. SPIEGAZIONE
+
+As embedded method we used Lasso. SPIEGAZIONE
 
 \subsection{Evaluation}
 
@@ -161,23 +165,108 @@ With the \textit{F measure} we selected the following features
 
 \begin{itemize}
 \item Two features: \texttt{['TotalBsmtSF' 'GrLivArea']} 
-\item Six features:  \texttt{['2ndFlrSF' 'OpenPorchSF' 'WoodDeckSF' '1stFlrSF' 'TotalBsmtSF'
- 'GrLivArea']}
+\item Six features:  \texttt{['2ndFlrSF' 'OpenPorchSF' 'WoodDeckSF' '1stFlrSF' 'TotalBsmtSF' 'GrLivArea']}
 \end{itemize}
 
-that provided the respective results for the $R^2$:
+that provided the respective results for the $R^2$ on the test set:
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline
-\empty & $R^2$ \\
+numer of features & $R^2$ \\
 \hline
-2 features & $0.22$ \\
+2  & $0.22$ \\
 \hline
-6 features & $0.47$ \\
+6  & $0.47$ \\
 \hline
 
 \end{tabular}
 \end{table}
 
+
+Both with two variables such as with six variables, the $R^2$ seems to be very low, for two variables is even less than $0.5$, so we can assume the models are both not reliable.
+
+\subsubsection{Wrapper method}
+
+With the \textit{forward feature selection} we selected the following features 
+
+\begin{itemize}
+\item Two features: \texttt{['TotalBsmtSF' 'GrLivArea']} 
+\item Six features:  \texttt{['LotArea' 'TotalBsmtSF' '1stFlrSF' '2ndFlrSF' 'GrLivArea' 'OpenPorchSF']}
+\end{itemize}
+
+that provided the respective results for the $R^2$ on the test set:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+numer of features & $R^2$ \\
+\hline
+2  & $0.22$ \\
+\hline
+6  & $0.46$ \\
+\hline
+
+\end{tabular}
+\end{table}
+
+As we can see \textit{forward feature selection} chose the same two variables as the \textit{F measure} did, but others for six variables. In any cases these models are not acceptable, because the values for the $R^2$ are too small.
+
+With the \textit{backward feature selection} we selected the following features 
+
+\begin{itemize}
+\item Two features: \texttt{['TotalBsmtSF' '2ndFlrSF']} 
+\item Six features:  \texttt{['LotArea' 'TotalBsmtSF' '1stFlrSF' '2ndFlrSF' 'OpenPorchSF' '3SsnPorch']}
+\end{itemize}
+
+that provided the respective results for the $R^2$ on the test set:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+numer of features & $R^2$ \\
+\hline
+2  & $0.20$ \\
+\hline
+6  & $0.44$ \\
+\hline
+
+\end{tabular}
+\end{table}
+
+Now the second variable has change for the \textit{backward feature selection} from the \textit{F measure} method and \textit{forward feature selection}. We can still say that the values of the $R^2$ are still very small.
+
+\subsubsection{Embedded method}
+
+With \textit{Lasso} we selected the following features 
+
+\begin{itemize}
+\item Two features: \texttt{['2ndFlrSF' '1stFlrSF']} 
+\item Six features:  \texttt{ ['2ndFlrSF' '1stFlrSF' 'TotalBsmtSF' 'WoodDeckSF' 'OpenPorchSF' 'ScreenPorch']}
+\end{itemize}
+
+that provided the respective results for the $R^2$ on the test set:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+numer of features & $R^2$ \\
+\hline
+2  & $0.18$ \\
+\hline
+6  & $0.44$ \\
+\hline
+
+\end{tabular}
+\end{table}
+
+The variables selected are a little bit different from the previous ones, but as for the other methods, there are no significant emprovements in the values of the $R^2$
 \end{document}
+
+
+
+
+
+
+
+
