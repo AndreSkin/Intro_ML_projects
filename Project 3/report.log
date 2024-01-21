@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  19 JAN 2024 00:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.25)  21 JAN 2024 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -720,7 +720,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
 (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Bielefeld_University.png, id=76, 3011.25pt x 2138.99126pt>
+<Bielefeld_University.png, id=96, 3011.25pt x 2138.99126pt>
 File: Bielefeld_University.png Graphic file (type png)
 <use Bielefeld_University.png>
 Package pdftex.def Info: Bielefeld_University.png  used on input line 67.
@@ -741,13 +741,22 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 77.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 81.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 83.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
+91.
 
-Overfull \hbox (17.62828pt too wide) in paragraph at lines 87--101
- [][] 
- []
+(c:/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 91.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 109.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 109.
 
-
-Overfull \hbox (17.62828pt too wide) in paragraph at lines 128--142
+Overfull \hbox (17.62828pt too wide) in paragraph at lines 129--143
  [][] 
  []
 
@@ -755,100 +764,96 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.161 
+l.162 
        [1]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 164.
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-166.
- (c:/texlive/2020/texmf-dist/tex/latex/newtx/t1ntxtt.fd
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 166.
-
-Overfull \hbox (19.29477pt too wide) in paragraph at lines 166--167
-\T1/ntxtlf/m/n/12 "\T1/ntxtt/m/n/12 GrLivArea\T1/ntxtlf/m/n/12 ", "\T1/ntxtt/m/
-n/12 WoodDeckSF\T1/ntxtlf/m/n/12 ", "\T1/ntxtt/m/n/12 OpenPorchSF\T1/ntxtlf/m/n
-/12 ", "\T1/ntxtt/m/n/12 3SsnPoarch\T1/ntxtlf/m/n/12 ", "\T1/ntxtt/m/n/12 Scree
-nPorch\T1/ntxtlf/m/n/12 " and "\T1/ntxtt/m/n/12 PoolArea\T1/ntxtlf/m/n/12 ". 
- []
-
-
-Overfull \hbox (38.52962pt too wide) in paragraph at lines 172--186
+Overfull \hbox (17.62828pt too wide) in paragraph at lines 169--183
  [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 210.
-[2]
+(Font)              scaled to size 12.0pt on input line 188.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 243.
- (c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+e 194.
+(c:/texlive/2020/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 243.
-
-Overfull \hbox (33.46571pt too wide) in paragraph at lines 244--245
+(Font)              scaled to size 12.0pt on input line 194.
+ [2] [3] [4]
+Overfull \hbox (33.46571pt too wide) in paragraph at lines 261--262
 []\T1/ntxtlf/m/n/12 Six fea-tures: \T1/ntxtt/m/n/12 ['2ndFlrSF' 'OpenPorchSF' '
 WoodDeckSF' '1stFlrSF' 'TotalBsmtSF'
  []
 
-[3]
-Overfull \hbox (1.96577pt too wide) in paragraph at lines 271--272
+
+Overfull \hbox (1.96577pt too wide) in paragraph at lines 268--269
 []\T1/ntxtlf/m/n/12 Six fea-tures: \T1/ntxtt/m/n/12 ['LotArea' 'TotalBsmtSF' '1
 stFlrSF' '2ndFlrSF' 'GrLivArea'
  []
 
 
-Overfull \hbox (14.56575pt too wide) in paragraph at lines 295--296
+Overfull \hbox (14.56575pt too wide) in paragraph at lines 275--276
 []\T1/ntxtlf/m/n/12 Six fea-tures: \T1/ntxtt/m/n/12 ['LotArea' 'TotalBsmtSF' '1
 stFlrSF' '2ndFlrSF' 'OpenPorchSF'
  []
 
-[4]
-Overfull \hbox (46.06569pt too wide) in paragraph at lines 321--322
+
+Overfull \hbox (46.06569pt too wide) in paragraph at lines 282--283
 []\T1/ntxtlf/m/n/12 Six fea-tures:  \T1/ntxtt/m/n/12 ['2ndFlrSF' '1stFlrSF' 'To
 talBsmtSF' 'WoodDeckSF' 'OpenPorchSF'
  []
 
-[5] [6]
+[5] [6] [7] [8]
 
 Package caption Warning: Unused \captionsetup[figure] on input line 29.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D4FC27378BC341E572F84A5A5B74B54F;1190.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 47F44A6D7B7143E03533DC00D397160E;1507
+(rerunfilecheck)             After:  495A5F9F61CD813EBA595A79905D81FD;1517.
  ) 
 Here is how much of TeX's memory you used:
- 15052 strings out of 480875
- 267522 string characters out of 5911456
+ 15069 strings out of 480875
+ 267764 string characters out of 5911456
  573817 words of memory out of 5000000
- 30353 multiletter control sequences out of 15000+600000
- 567085 words of font info for 64 fonts, out of 8000000 for 9000
+ 30362 multiletter control sequences out of 15000+600000
+ 573347 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,97p,824b,862s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/20
-20/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<c:/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c
-:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2020
-/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2020/texmf-dist/fonts
-/type1/public/newtx/ztmr.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/new
-tx/ztmri.pfb>
-Output written on report.pdf (8 pages, 250756 bytes).
+pdfTeX warning (dest): name{subsubsection.5.3.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2020
+/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<c:/texlive/2020/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/20
+20/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2020/texmf-dist/
+fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2020/texmf-dist/fonts/type1/pu
+blic/newtx/ztmb.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr.p
+fb><c:/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on report.pdf (10 pages, 282632 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -80,21 +80,23 @@
 
 \subsection{First data set}
 
-The first data set was made of ten columns $X$ for the independent variable and one column for the dependent variable $y$. The data set had $1000$ numeric samples and it has no NaNs. We didn't know what the variables represented, but we could resume the main information of the variables with this table:  
+The first data set (named \textit{real world data}) was a real data set regarding the prices of some houses. It was made of ten columns $X_1,\;.\;.\;.\;,X_{10}$ for the independent variables and one column for the dependent variable $y$. The data set had $1095$ numeric samples and it had no NaNs.
+
+We could resume the main information of the variables with this table:  
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-\empty & $X_1$ & $X_2$ & $X_3$ & $X_4$ & $X_5$ & $X_6$ & $X_7$ & $X_8$ & $X_9$ & $X_{10}$ \\
+\empty & \texttt{LotArea} & \texttt{TotalBsmtSF} & \texttt{1stFlrSF} & \texttt{2ndFlrSF} & \texttt{GrLivArea} & \texttt{WoodDeckSF}\\
 \hline
-mean & $0.66$ & $-0.06$ & $0.02$ & $-0.2$ & $0.04$ & $-0.1$ & $0.12$ & $0.06$ & $0.08$ & $0.06$ \\
+mean & $10722.41$ & $1159.84$ & $0$ & $338.71$ & $1505.13$ & $91,06$ \\
 \hline
-std dev & $2.60$ & $5.80$ & $3.50$ & $5.76$ & $2.69$ & $5.75$ & $5.78$ & $5.90$ & $3.31$ & $5.79$\\
+std dev & $11054.40$ & $376.46$ & $34900$ & $432.04$ & $514.24$ & $120.64$ \\
 \hline
-min & $-7.32$ & $-9.98$ & $-8.44$ & $-9.95$ & $-9.13$ & $-9.98$ & $-9.98$ & $-9.99$ & $-7.91$ & $-9.98$\\
+min & $1300$ & $0$ & $343$ & $0$ & $334$ & $0$ \\
 \hline
-max & $7.4$ & $9.97$ & $7.43$ & $9.97$ & $8.92$ & $9.98$ & $9.98$ & $9.97$ & $8.26$ & $9.97$\\
+max & $215245$ & $3206$ & $3228$ & $1872$ & $4676$ & $670$ \\
 \hline
 
 \end{tabular}
@@ -102,26 +104,25 @@ max & $7.4$ & $9.97$ & $7.43$ & $9.97$ & $8.92$ & $9.98$ & $9.98$ & $9.97$ & $8.
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|}
 \hline
-\empty & $y$\\
+\empty & \texttt{OpenPorchSF} & $\texttt{3SsnPoarch}$ & \texttt{ScreenPorch} &  \texttt{PoolArea} & $y$\\
 \hline
-mean &  $0.5$\\
+mean & $47.26$ & $2.78$ & $15.09$ &  $2.14$ &  $179984.82$\\
 \hline
-std dev & $0.5$\\
+std dev & $66.79$  & $25.18$ & $56.55$  & $35.79$ & $77610.06$\\
 \hline
-min &  $0$\\
+min   & $0$ & $0$ & $0$ & $0$ &  $34900$\\
 \hline
-max  & $1$\\
+max & $547$ & $407$ & $480$ & $738$ & $755000$\\
 \hline
 
 \end{tabular}
 \end{table}
-
 
 \subsection{Second data set}
 
-The first data set was made of thirteen columns $X$ for the independent variable and one column for the dependent variable $y$. The data set had $110$ numeric samples and it has no NaNs. We didn't know what the variables represented, but we could resume the main information of the variables with this table:  
+The first data set was made of thirteen columns $X$ for the independent variable and one column for the dependent variable $y$. The data set had $110$ numeric samples and it had no NaNs. We didn't know what the variables represented, but we could resume the main information of the variables with this table:  
 
 \begin{table}[H]
 \centering
@@ -161,11 +162,7 @@ max  &  $2.33$ & $2.04$ & $1.96$ & $2$\\
 
 \subsection{Third data set}
 
-The third data set (named \textit{real world data}) was a real data set regarding the prices of some houses. It was made of ten columns $X_1,\;.\;.\;.\;,X_{10}$ for the independent variables and one column for the dependent variable $y$. The data set had $1095$ numeric samples and it had no NaNs.
-
-The labels of the variables were: "\texttt{LotArea}", "\texttt{TotalBsmtSF}", "\texttt{1stFlrSF}", "\texttt{2ndFlrSF}", "\texttt{GrLivArea}", "\texttt{WoodDeckSF}", "\texttt{OpenPorchSF}", "\texttt{3SsnPoarch}", "\texttt{ScreenPorch}" and "\texttt{PoolArea}".
-
-We could resume the main information of the variables with this table:  
+The third data set was made of ten columns $X$ for the independent variable and one column for the dependent variable $y$. The data set had $1000$ numeric samples, it had no NaNs and in the dependend variable $y$ we had boolean values $\{0,1\}$ referring to two classes. We didn't know what the variables represented, but we could resume the main information of the variables with this table:  
 
 \begin{table}[H]
 \centering
@@ -173,96 +170,96 @@ We could resume the main information of the variables with this table:
 \hline
 \empty & $X_1$ & $X_2$ & $X_3$ & $X_4$ & $X_5$ & $X_6$ & $X_7$ & $X_8$ & $X_9$ & $X_{10}$ \\
 \hline
-mean & $10722.41$ & $1159.84$ & $0$ & $338.71$ & $1505.13$ & $91,06$ & $47.26$ & $2.78$ & $15.09$  & $2.14$ \\
+mean & $0.66$ & $-0.06$ & $0.02$ & $-0.2$ & $0.04$ & $-0.1$ & $0.12$ & $0.06$ & $0.08$ & $0.06$ \\
 \hline
-std dev & $11054.40$ & $376.46$ & $34900$ & $432.04$ & $514.24$ & $120.64$ & $66.79$ & $25.18$ & $56.55$ & $35.79$ \\
+std dev & $2.60$ & $5.80$ & $3.50$ & $5.76$ & $2.69$ & $5.75$ & $5.78$ & $5.90$ & $3.31$ & $5.79$\\
 \hline
-min & $1300$ & $0$ & $343$ & $0$ & $334$ & $0$ & $0$ & $0$ & $0$ & $0$ \\
+min & $-7.32$ & $-9.98$ & $-8.44$ & $-9.95$ & $-9.13$ & $-9.98$ & $-9.98$ & $-9.99$ & $-7.91$ & $-9.98$\\
 \hline
-max & $215245$ & $3206$ & $3228$ & $1872$ & $4676$ & $670$ & $547$ & $407$ & $480$ & $738$ \\
-\hline
-
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-\empty & $y$\\
-\hline
-mean &  $179984.82$\\
-\hline
-std dev & $77610.06$\\
-\hline
-min &  $34900$\\
-\hline
-max  & $755000$\\
+max & $7.4$ & $9.97$ & $7.43$ & $9.97$ & $8.92$ & $9.98$ & $9.98$ & $9.97$ & $8.26$ & $9.97$\\
 \hline
 
 \end{tabular}
 \end{table}
-
 \section{Foundations}
 
 \subsection{Methods}
 
 \subsubsection{Filter methods, wrapper methods and embedded methods}
 
-For variables selection what we decided to do was to apply three methods: filter methods, wrapper methods and unbedded methods. 
+Given the regression (or classification) tasks $(\vec{x}_i,y_i)_{i=1}^{n}$, we decided to apply three methods to do feature selection : filter methods, wrapper methods and embedded methods. 
 
-As filter method, we used the \textit{F measure}. SPIEGAZIONE
+\begin{itemize}
 
-As wrapper method we used sequential feature selection both forward and backward. SPIEGAZIONE
+\item A filter method consists in assigning a relevance value $r(I)$ for every feature I based on the data only and then take the most relevant features only. In this case we decided to use F measure.
 
-As embedded method we used Lasso. SPIEGAZIONE
+Given a training set $(X, Y)$, the F measure computes the Pearson correlation of the inputs to the output for each feature.
+
+\item A wrapper methods selects features iteratively based on their impact on the chosen
+classifier/regressor. We decided to be more complete to use both forward (adding a new variable starting from a model with zero variables) selection and backward (starting with the full model and always removing the worst value) selection.
+
+\item A embedded method integrates and adapts feature relevance terms within the model
+itself. We used Lasso that uses the formula $\min_{\vec{w}}NLL+\lambda||\vec{w}||_1$, where NLL refers to the negative data log likelihood.
+
+
+\end{itemize}
 
 \subsubsection{Random forest classifier}
 
-SPIEGAZIONE
+Random forest classifier implements a bagging of decision trees with randomization of the input
+variable selection.
 
 \subsubsection{Naive Bayes classifier}
 
-SPIEGAZIONE
+The naive Bayes classifier estimates probabilities of the optimum Bayes classifier based
+on data and relying on the assumption of conditional independence of the observed data coefficients.
 
 \subsubsection{Logistic regression}
 
-SPIEGAZIONE
+Given the two class classification problem we had with classes {0, 1}, logistic regression realizes
+the model
+
+\begin{displaymath}
+\mathbb{P}(y=1|\vec{x},\vec{w})\sim Ber(y=1|sgd(\vec{w}^T\vec{x}))
+\end{displaymath}
+
+where $\vec{w}$ is the model parameter,  $sgd(t)=(1+exp(-t))^{-1}$ is the sigmoidal function, and $Ber$ is the Bernoulli distribution.
 
 \subsubsection{k nearest neighbours}
 
-SPIEGAZIONE
+For fixed $k > 0$, the k-nearest neighbor classifier provides the output
+
+\begin{displaymath}
+\mathbb{P}(y=c|\vec{x},\mathcal{D},k)=\frac{1}{k}|\{\vec{x}_i|(\vec{x}_i,y_i)\in\mathcal{D},\vec{x}_i \;\text{within} \;k \;\text{closest points of}\; \vec{x}\; \text{and}\; y_i=c\}|
+\end{displaymath}
+
+Then the class is determined for $f_{kNN}(\vec{x}) = argmax_c\mathbb{P}(y = c|\vec{x},\mathcal{D}, k)$. 
 
 \subsection{Evaluation}
 
-\subsubsection{Filter method}
+\subsubsection{Cross validation}
+For our methods we always used the cross validation for which we splitted the data set into 5 folds. To do it we trained the model on four folds and we tested on the fifth one to compute the our accuracy measures. After doing it for all folds, we took the mean of the five accuarcy measure obtained.
 
-With the \textit{F measure} we selected the following features 
+\subsubsection{Accuracy measures}
+
+As accuracy measures for random forest classifier, naive Bayes classifier, logistic regression and k-nearest neighbors we used the accuracy score which is the sum of the true positive and true negative over all cases.
+
+\section{Experiments}
+
+\subsection{Set-Up}
+Our experiments were carried on a jupyter notebook that we converted in a python file. The data sets' extension is \texttt{.npz}.
+
+
+\subsection{Analysis and Results}
+
+\subsubsection{First data set}
+
+On the first dataset we did did a variable selection with the previous explained methods and using the random forest regressor the \textit{F measure} we selected the following features 
 
 \begin{itemize}
 \item Two features: \texttt{['TotalBsmtSF' 'GrLivArea']} 
 \item Six features:  \texttt{['2ndFlrSF' 'OpenPorchSF' 'WoodDeckSF' '1stFlrSF' 'TotalBsmtSF' 'GrLivArea']}
 \end{itemize}
-
-that provided the respective results for the $R^2$ on the test set:
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-numer of features & $R^2$ \\
-\hline
-2  & $0.22$ \\
-\hline
-6  & $0.47$ \\
-\hline
-
-\end{tabular}
-\end{table}
-
-
-Both with two variables such as with six variables, the $R^2$ seems to be very low, for two variables is even less than $0.5$, so we can assume the models are both not reliable.
-
-\subsubsection{Wrapper method}
 
 With the \textit{forward feature selection} we selected the following features 
 
@@ -271,48 +268,12 @@ With the \textit{forward feature selection} we selected the following features
 \item Six features:  \texttt{['LotArea' 'TotalBsmtSF' '1stFlrSF' '2ndFlrSF' 'GrLivArea' 'OpenPorchSF']}
 \end{itemize}
 
-that provided the respective results for the $R^2$ on the test set:
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-numer of features & $R^2$ \\
-\hline
-2  & $0.22$ \\
-\hline
-6  & $0.46$ \\
-\hline
-
-\end{tabular}
-\end{table}
-
-As we can see \textit{forward feature selection} chose the same two variables as the \textit{F measure} did, but others for six variables. In any cases these models are not acceptable, because the values for the $R^2$ are too small.
-
 With the \textit{backward feature selection} we selected the following features 
 
 \begin{itemize}
 \item Two features: \texttt{['TotalBsmtSF' '2ndFlrSF']} 
 \item Six features:  \texttt{['LotArea' 'TotalBsmtSF' '1stFlrSF' '2ndFlrSF' 'OpenPorchSF' '3SsnPorch']}
 \end{itemize}
-
-that provided the respective results for the $R^2$ on the test set:
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|}
-\hline
-numer of features & $R^2$ \\
-\hline
-2  & $0.20$ \\
-\hline
-6  & $0.44$ \\
-\hline
-
-\end{tabular}
-\end{table}
-
-Now the second variable has change for the \textit{backward feature selection} from the \textit{F measure} method and \textit{forward feature selection}. We can still say that the values of the $R^2$ are still very small.
-
-\subsubsection{Embedded method}
 
 With \textit{Lasso} we selected the following features 
 
@@ -321,23 +282,101 @@ With \textit{Lasso} we selected the following features
 \item Six features:  \texttt{ ['2ndFlrSF' '1stFlrSF' 'TotalBsmtSF' 'WoodDeckSF' 'OpenPorchSF' 'ScreenPorch']}
 \end{itemize}
 
-that provided the respective results for the $R^2$ on the test set:
+METTERE UN COMMENTO SU COME SONO CAMBIATE LE FEATURES
+
+With the selection of two variables we obtained the following results:
+
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|}
 \hline
-numer of features & $R^2$ \\
+method & $R^2$ \\
 \hline
-2  & $0.18$ \\
+F measure  & $0.22$ \\
 \hline
-6  & $0.44$ \\
+Forward selection  & $0.22$ \\
+\hline
+Backward selection  & $0.20$ \\
+\hline
+Lasso  & $0.18$ \\
+\hline
+\end{tabular}
+\end{table}
+
+COMMENTA CHE SONO BASSI
+
+With the selection of six variables we obtained the following results:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+method & $R^2$ \\
+\hline
+F measure  & $0.47$ \\
+\hline
+Forward selection  & $0.46$ \\
+\hline
+Backward selection  & $0.44$ \\
+\hline
+Lasso  & $0.44$ \\
+\hline
+\end{tabular}
+\end{table}
+
+COMMENTA CHE SONO BASSI
+\subsubsection{Second data set}
+
+We worked on the first dataset which was a classification task with the following methods:
+
+\begin{itemize}
+\item Random forest classifier
+\item Naive Bayes
+\item Logistic regression
+\item kNN
+\end{itemize}
+
+and with all of them we used cross validation with five folds. The results we obtained for the accuracy are the following:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+method & accuracy \\
+\hline
+Random Forest Classifier  & $0.91$ \\
+\hline
+Naive Bayes Classifier  & $0.9$ \\
+\hline
+Logistic regression Classifier  & $0.54$ \\
+\hline
+k-nearest neighbors Classifier  & $0.65$ \\
 \hline
 
 \end{tabular}
 \end{table}
 
-The variables selected are a little bit different from the previous ones, but as for the other methods, there are no significant emprovements in the values of the $R^2$
+Then we decided to use forward selection. We selected the model with the highest value for the $R^2$ on the test set which was the model complete of the second, third, sixth and nineth variable to obtain the following results:
 
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+method & accuracy \\
+\hline
+Random Forest Classifier  & $0.91$ \\
+\hline
+Naive Bayes Classifier  & $0.9$ \\
+\hline
+Logistic regression Classifier  & $0.51$ \\
+\hline
+k-nearest neighbors Classifier  & $0.86$ \\
+\hline
+
+\end{tabular}
+\end{table}
+
+\subsubsection{Third data set}
 \newpage
 \section{Bonus task}
 
